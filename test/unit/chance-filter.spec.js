@@ -1,8 +1,8 @@
-describe('Chance Filter', function() {
+describe('Filtro Chance', function() {
 
   beforeEach(module('App'));
 
-  it('should round any decimal percentage to nearest 10 value', inject(function(chanceFilter) {
+  it('Debe redondear cualquier decimal porcentaje hacia su valor de 10', inject(function(chanceFilter) {
     expect(chanceFilter(0.01)).toEqual(0);
     expect(chanceFilter(0.05)).toEqual(10);
     expect(chanceFilter(0.44)).toEqual(40);
